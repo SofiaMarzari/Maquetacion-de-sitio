@@ -3,6 +3,7 @@ Verdana,
 Geneva,
 Tahoma;
 $colorprincipal: #FFFFFF;
+$none: 0px 0px 0px 0px;
 @media only screen and (min-width: 1024px) {
     /*    NAVEGACION    */
     nav {
@@ -46,24 +47,90 @@ $colorprincipal: #FFFFFF;
     /*          SECTION PRESENTACION        */
     #section-presentacion {
         height: 730px;
-        display: grid;
     }
-    #section-presentacion>img {
-        max-width: 100%;
+    #section-imagen-presentacion {
+        width: 99%;
+        height: 730px;
         position: absolute;
         z-index: 1;
     }
-    #titulo-presentacion {
+    #section-imagen-presentacion>img {
+        height: 730px;
+        max-width: 100%;
+    }
+    .div-textos-presentacion {
+        position: relative;
+        z-index: 3;
+        height: 730px;
+    }
+    #section-textos-titulos {
+        height: 730px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: "titulo titulo titulo" "numero numero proxima";
+    }
+    #section-titulo-presentacion {
         display: flex;
         flex-direction: column;
         width: 720px;
         height: 215px;
-        position: absolute;
-        z-index: 3;
+        grid-area: titulo;
+        margin-left: 139px;
+        margin-top: 240px;
     }
-    #titulo-presentacion>h1 {
+    #section-titulo-presentacion>div {
+        max-width: 100%;
+        height: 84px;
+        display: flex;
+        flex-direction: row;
+    }
+    #section-titulo-presentacion>div>img {
+        width: 24px;
+        height: 34px;
+        margin-top: 5px;
+    }
+    #section-titulo-presentacion>div>h1 {
         color: $colorprincipal;
+        height: 53px;
         font-family: $fuenteprincipal;
         font-size: 40px;
+        margin: 0px 0px 0px 17px;
+        font-size: 48px;
+    }
+    #section-titulo-presentacion>h6 {
+        font-family: $fuenteprincipal;
+        color: $colorprincipal;
+        font-size: 24px;
+        border-top: 2px;
+        border-style: solid;
+        width: 600px;
+        padding-top: 15px;
+    }
+    #section-titulo-presentacion>p {
+        font-family: $fuenteprincipal;
+        color: $colorprincipal;
+        margin-top: 0px;
+        width: 536px;
+    }
+    #article-numerodepublicacion {
+        display: flex;
+        flex-direction: row;
+        width: 201px;
+        height: 60px;
+        border: 1px;
+        border-color: $colorprincipal;
+        border-style: solid;
+        grid-area: numero;
+        margin-top: 100px;
+    }
+    #article-proximaaventura {
+        width: 260px;
+        height: 157px;
+        border: 2px;
+        border-style: dashed;
+        border-radius: 6px;
+        color: $colorprincipal;
+        grid-area: proxima;
+        margin-left: 600px;
     }
 }
