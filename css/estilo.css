@@ -41,16 +41,12 @@
         justify-content: space-around;
   }
   nav > ul > li {
-    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    font-family: "Montserrat", sans-serif;
     color: #CBD0D3;
   }
   nav > ul > li:first-child {
     color: #2A3037;
     opacity: 1;
-  }
-  /*         CONTENEDOR AJAX      */
-  .is-div-color {
-    width: 100%;
   }
   /*          SECTION PRESENTACION        */
   #section-presentacion {
@@ -61,6 +57,7 @@
     height: 730px;
     position: absolute;
     z-index: 1;
+    margin-top: 5px;
   }
   #section-imagen-presentacion > img {
     height: 730px;
@@ -110,30 +107,64 @@
   #section-titulo-presentacion > div > img {
     width: 24px;
     height: 34px;
-    margin-top: 5px;
+    margin-top: 12px;
   }
   #section-titulo-presentacion > div > h1 {
     color: #FFFFFF;
     height: 53px;
-    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     margin: 0px 0px 0px 17px;
     font-size: 48px;
   }
   #section-titulo-presentacion > h6 {
-    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
     font-size: 24px;
-    border-top: 2px;
-    border-style: solid;
+    border-top: solid #FFFFFF 2px;
     width: 600px;
-    padding-top: 15px;
+    padding-top: 20px;
+    margin: 30px 0px 28px 0px;
   }
   #section-titulo-presentacion > p {
-    font-family: Montserrat, Verdana, Geneva, Tahoma;
+    font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
     margin-top: 0px;
     width: 536px;
+  }
+  #article-proximaaventura {
+    width: 260px;
+    height: 157px;
+    background-color: rgba(42, 48, 55, 0.5);
+    border: 2px;
+    border-style: dashed;
+    border-radius: 6px;
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #FFFFFF;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: proxima;
+    margin-left: 490px;
+    margin-bottom: 25px;
+    padding-left: 50px;
+    padding-top: 27px;
+  }
+  #article-proximaaventura > h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #FA6980;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+  }
+  #article-proximaaventura > h6 > span {
+    margin-left: 16px;
+  }
+  #article-proximaaventura > h4 {
+    font-family: "Montserrat", sans-serif;
+  }
+  #article-proximaaventura > p {
+    font-family: "Montserrat", sans-serif;
+    width: 250px;
+    height: 43px;
   }
   #article-numerodepublicacion {
     display: -webkit-box;
@@ -152,19 +183,71 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: numero;
-    margin-top: 100px;
+    margin-top: 120px;
   }
-  #article-proximaaventura {
-    width: 260px;
-    height: 157px;
-    border: 2px;
-    border-style: dashed;
+  #article-numerodepublicacion > div {
+    width: 60px;
+    height: 60px;
+  }
+  .circulo-gris-numero {
+    position: absolute;
+    background-color: #CBD0D395;
+    width: 60px;
+    height: 60px;
+    border-radius: 90%;
+    margin: 0px 0px 0px 0px;
+  }
+  .circulo-blanco-numero {
+    position: absolute;
+    left: 11px;
+    top: 617px;
+    background-color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    margin: 0px 0px 0px 0px;
+  }
+  #is-numeroarticulo {
+    position: absolute;
+    left: 24px;
+    top: 607px;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+  }
+  /*         CONTENEDOR AJAX      */
+  .is-div-color {
+    width: 100%;
+    height: 736px;
+    background-color: #EBEBEB;
+  }
+  /*          SECTION TENDENCIAS      */
+  #section-tendencias {
+    width: 1103px;
+    height: 428px;
+    margin-left: 132px;
+    padding-top: 100px;
+  }
+  #section-contenedor-tendencias {
+    width: 1103px;
+    height: 368px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-tendenciaparticular {
+    width: 352px;
+    height: 314px;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+            box-shadow: 0px 3px 6px #00000029;
     border-radius: 6px;
-    color: #FFFFFF;
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: proxima;
-    margin-left: 600px;
+    background-color: #FFFFFF;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
