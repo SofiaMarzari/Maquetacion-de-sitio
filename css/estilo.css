@@ -304,10 +304,82 @@
   }
   /*         SECTION BLOG     */
   #section-blog {
-    width: 1088px;
+    width: 1103px;
     height: 982px;
-    background-color: brown;
-    margin-left: 140px;
+    margin-left: 100px;
+    position: relative;
+    bottom: 155px;
+  }
+  #section-blog > p {
+    font-family: "Montserrat", sans-serif;
+    color: #2A3037;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  #section-contenedor-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 942px;
+    width: 1103px;
+  }
+  /*  COLUMNA IZQUIERDA DEL CONTENEDOR BLOG   */
+  #section-contenedor-blog-I {
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-blogparticularI {
+    width: 720px;
+    height: 429px;
+    border-radius: 6px;
+  }
+  .blogparticularI-div-textos {
+    position: absolute;
+    z-index: 3;
+  }
+  .blogparticularI-div-img {
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+  }
+  /*  COLUMNA DERECHA DEL CONTENEDOR BLOG   */
+  #section-contenedor-blog-D {
+    width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 30px;
+  }
+  .section-blogparticularD {
+    width: 352px;
+    height: 272px;
+  }
+  .section-blogparticularD > img {
+    width: 352px;
+    height: 210px;
+  }
+  .section-blogparticularD > p {
+    font-family: 'Acumin Pro';
   }
   /*          FOOTER          */
   footer {
