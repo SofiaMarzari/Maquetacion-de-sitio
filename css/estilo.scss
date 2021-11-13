@@ -123,13 +123,13 @@ $none: 0px 0px 0px 0px;
         grid-area: proxima;
         margin-left: 490px;
         margin-bottom: 25px;
-        padding-left: 50px;
+        padding-left: 40px;
         padding-top: 27px;
     }
     #article-proximaaventura>h6 {
         font-family: $fuenteprincipal;
         color: #FA6980;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         margin: $none;
     }
@@ -183,7 +183,7 @@ $none: 0px 0px 0px 0px;
         left: 24px;
         top: 607px;
         font-family: $fuenteprincipal;
-        font-style: normal;
+        font-weight: bold;
     }
     /*         CONTENEDOR AJAX      */
     .is-div-color {
@@ -319,7 +319,10 @@ $none: 0px 0px 0px 0px;
         font-size: 16px;
         color: $colorprincipal;
         margin: 0px 0px 10px 0px;
-        width: 600px;
+        width: 575px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: string;
     }
     .blogparticularI-div-img {
         position: absolute;
