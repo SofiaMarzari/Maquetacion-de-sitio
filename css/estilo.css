@@ -43,10 +43,12 @@
   nav > ul > li {
     font-family: "Montserrat", sans-serif;
     color: #CBD0D3;
+    font-size: 18px;
   }
   nav > ul > li:first-child {
     color: #2A3037;
     opacity: 1;
+    font-size: 18px;
   }
   /*          SECTION PRESENTACION        */
   #section-presentacion {
@@ -113,7 +115,7 @@
     color: #FFFFFF;
     height: 53px;
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-weight: bold;
     margin: 0px 0px 0px 17px;
     font-size: 48px;
   }
@@ -121,6 +123,7 @@
     font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
     font-size: 24px;
+    font-weight: bold;
     border-top: solid #FFFFFF 2px;
     width: 600px;
     padding-top: 20px;
@@ -153,6 +156,7 @@
     font-family: "Montserrat", sans-serif;
     color: #FA6980;
     font-size: 16px;
+    font-weight: bold;
     margin: 0px 0px 0px 0px;
   }
   #article-proximaaventura > h6 > span {
@@ -160,6 +164,7 @@
   }
   #article-proximaaventura > h4 {
     font-family: "Montserrat", sans-serif;
+    font-weight: bold;
   }
   #article-proximaaventura > p {
     font-family: "Montserrat", sans-serif;
@@ -224,8 +229,14 @@
   #section-tendencias {
     width: 1103px;
     height: 428px;
-    margin-left: 132px;
+    margin-left: 100px;
     padding-top: 100px;
+  }
+  #section-tendencias > p {
+    font-family: "Montserrat", sans-serif;
+    color: #2A3037;
+    font-size: 26px;
+    font-weight: bold;
   }
   #section-contenedor-tendencias {
     width: 1103px;
@@ -248,6 +259,48 @@
             box-shadow: 0px 3px 6px #00000029;
     border-radius: 6px;
     background-color: #FFFFFF;
+  }
+  .section-tendenciaparticular > img {
+    width: 352px;
+    height: 180px;
+  }
+  .section-tendenciaparticular > h6 {
+    color: #2A3037;
+    width: 286px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 40px 0px 0px 33px;
+  }
+  .section-tendenciaparticular > p {
+    width: 286px;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    color: #7A838D;
+    margin: 10px 0px 0px 33px;
+  }
+  /*CARTEL "NUEVO" */
+  .is-article-nuevocartel {
+    width: 83px;
+    height: 32px;
+    background-color: #FA6980;
+    margin-left: 33px;
+    border-radius: 6px;
+    position: absolute;
+    top: 1145px;
+    text-align: center;
+  }
+  .is-article-nuevocartel > p {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+  }
+  .hidden-nuevocartel {
+    visibility: hidden;
+    position: absolute;
+    top: 1145px;
   }
 }
 /*# sourceMappingURL=estilo.css.map */

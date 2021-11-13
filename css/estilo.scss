@@ -1,6 +1,7 @@
 $fuenteprincipal: 'Montserrat',
 sans-serif;
 $colorprincipal: #FFFFFF;
+$colortextogrisaseo: #2A3037;
 $none: 0px 0px 0px 0px;
 @media only screen and (min-width: 1024px) {
     /*    NAVEGACION    */
@@ -33,10 +34,12 @@ $none: 0px 0px 0px 0px;
     nav>ul>li {
         font-family: $fuenteprincipal;
         color: #CBD0D3;
+        font-size: 18px;
     }
     nav>ul>li:first-child {
-        color: #2A3037;
+        color: $colortextogrisaseo;
         opacity: 1;
+        font-size: 18px;
     }
     /*          SECTION PRESENTACION        */
     #section-presentacion {
@@ -88,7 +91,7 @@ $none: 0px 0px 0px 0px;
         color: $colorprincipal;
         height: 53px;
         font-family: $fuenteprincipal;
-        font-size: 40px;
+        font-weight: bold;
         margin: 0px 0px 0px 17px;
         font-size: 48px;
     }
@@ -96,6 +99,7 @@ $none: 0px 0px 0px 0px;
         font-family: $fuenteprincipal;
         color: $colorprincipal;
         font-size: 24px;
+        font-weight: bold;
         border-top: solid $colorprincipal 2px;
         width: 600px;
         padding-top: 20px;
@@ -126,6 +130,7 @@ $none: 0px 0px 0px 0px;
         font-family: $fuenteprincipal;
         color: #FA6980;
         font-size: 16px;
+        font-weight: bold;
         margin: $none;
     }
     #article-proximaaventura>h6>span {
@@ -133,6 +138,7 @@ $none: 0px 0px 0px 0px;
     }
     #article-proximaaventura>h4 {
         font-family: $fuenteprincipal;
+        font-weight: bold;
     }
     #article-proximaaventura>p {
         font-family: $fuenteprincipal;
@@ -189,8 +195,14 @@ $none: 0px 0px 0px 0px;
     #section-tendencias {
         width: 1103px;
         height: 428px;
-        margin-left: 132px;
+        margin-left: 100px;
         padding-top: 100px;
+    }
+    #section-tendencias>p {
+        font-family: $fuenteprincipal;
+        color: $colortextogrisaseo;
+        font-size: 26px;
+        font-weight: bold;
     }
     #section-contenedor-tendencias {
         width: 1103px;
@@ -205,5 +217,47 @@ $none: 0px 0px 0px 0px;
         box-shadow: 0px 3px 6px #00000029;
         border-radius: 6px;
         background-color: $colorprincipal;
+    }
+    .section-tendenciaparticular>img {
+        width: 352px;
+        height: 180px;
+    }
+    .section-tendenciaparticular>h6 {
+        color: $colortextogrisaseo;
+        width: 286px;
+        font-family: $fuenteprincipal;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 40px 0px 0px 33px;
+    }
+    .section-tendenciaparticular>p {
+        width: 286px;
+        font-size: 13px;
+        font-family: $fuenteprincipal;
+        color: #7A838D;
+        margin: 10px 0px 0px 33px;
+    }
+    /*CARTEL "NUEVO" */
+    .is-article-nuevocartel {
+        width: 83px;
+        height: 32px;
+        background-color: #FA6980;
+        margin-left: 33px;
+        border-radius: 6px;
+        position: absolute;
+        top: 1145px;
+        text-align: center;
+    }
+    .is-article-nuevocartel>p {
+        color: $colorprincipal;
+        font-family: $fuenteprincipal;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 0px 0px 0px;
+    }
+    .hidden-nuevocartel {
+        visibility: hidden;
+        position: absolute;
+        top: 1145px;
     }
 }
