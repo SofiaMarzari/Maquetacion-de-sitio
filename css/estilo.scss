@@ -260,4 +260,31 @@ $none: 0px 0px 0px 0px;
         position: absolute;
         top: 1145px;
     }
+    /*         SECTION BLOG     */
+    #section-blog {
+        width: 1088px;
+        height: 982px;
+        background-color: brown;
+        margin-left: 140px;
+    }
+    /*          FOOTER          */
+    footer {
+        background-color: $colortextogrisaseo;
+        max-width: 100%;
+        height: 96px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #footer-section-logo {
+        margin-top: 39px;
+        margin-left: 139px;
+    }
+    #footer-section-logos-redes {
+        margin-top: 39px;
+        margin-right: 185px;
+    }
+    #footer-section-logos-redes>img {
+        margin-left: 35px;
+    }
 }

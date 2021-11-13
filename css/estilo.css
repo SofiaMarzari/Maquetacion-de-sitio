@@ -302,5 +302,39 @@
     position: absolute;
     top: 1145px;
   }
+  /*         SECTION BLOG     */
+  #section-blog {
+    width: 1088px;
+    height: 982px;
+    background-color: brown;
+    margin-left: 140px;
+  }
+  /*          FOOTER          */
+  footer {
+    background-color: #2A3037;
+    max-width: 100%;
+    height: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer-section-logo {
+    margin-top: 39px;
+    margin-left: 139px;
+  }
+  #footer-section-logos-redes {
+    margin-top: 39px;
+    margin-right: 185px;
+  }
+  #footer-section-logos-redes > img {
+    margin-left: 35px;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
