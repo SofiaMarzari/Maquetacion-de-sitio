@@ -33,7 +33,7 @@ function cerrarmenu() {
 /*          NAVEGACION DESKTOP Y MOBILE    ||   AJAX - PARTIAL RENDER  */
 function loadHome(event) {
     event.preventDefault();
-    fetch('../Aenima_Prueba_Maquetador/home.html').then(
+    fetch('https://sofiamarzari.github.io/Aenima-Prueba-FrontEnd-Maquetador/home.html').then(
         function(response) {
             if (response.ok) {
                 response.text().then(
@@ -69,7 +69,7 @@ function loadTendencias(event) {
 
 function loadBlog(event) {
     event.preventDefault();
-    fetch('../Aenima_Prueba_Maquetador/blog.html').then(
+    fetch('https://sofiamarzari.github.io/Aenima-Prueba-FrontEnd-Maquetador/blog.html').then(
         function(response) {
             if (response.ok) {
                 response.text().then(
