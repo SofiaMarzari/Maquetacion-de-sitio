@@ -4,37 +4,33 @@ document.addEventListener('DOMContentLoaded', function() {
     $('#section-btn-abrirmenu').addClass("ocultar");
 });
 let contenedor = document.getElementById('contenedor-ajax');
-
-/*          NAVEGACION MOBILE        */
-
-/*DESPLEGAR MENU*/
-$('#img-btn-abrirmenu').on('click', function() {
-    $(this).addClass("ocultar");
-    $('#section-menu-desplegable').removeClass("ocultar");
-    $('#img-btn-cerrarmenu').removeClass("ocultar");
-    $('#section-menu-desplegable').children('ul').removeClass("ocultar");
-
-    $('#section-menu-desplegable').addClass("menu-desplegable");
-});
-/*CERRAR MENU*/
+$('#img-btn-abrirmenu').on('click', abrirmenu);
 $('#img-btn-cerrarmenu').on('click', cerrarmenu);
-
-function cerrarmenu() {
-    $('#section-menu-desplegable').removeClass("menu-desplegable");
-    $('#img-btn-cerrarmenu').removeClass("btn-cerrarmenu");
-
-    $('#img-btn-abrirmenu').removeClass("ocultar");
-    $('#section-menu-desplegable').addClass("ocultar");
-    $(this).addClass("ocultar");
-    $('#section-menu-desplegable').children('ul').addClass("ocultar");
-}
-/*          NAVEGACION DESKTOP Y MOBILE      */
-
-/*      AJAX - PARTIAL RENDER */
 $('.btn-nav-home').on('click', loadHome);
 $('.btn-nav-tendencia').on('click', loadTendencias);
 $('.btn-nav-blog').on('click', loadBlog);
 
+/*          NAVEGACION MOBILE        */
+/*DESPLEGAR MENU*/
+function abrirmenu() {
+    $(this).toggleClass("ocultar");
+    $('#section-menu-desplegable').toggleClass("ocultar");
+    $('#img-btn-cerrarmenu').toggleClass("ocultar");
+    $('#section-menu-desplegable').children('ul').toggleClass("ocultar");
+
+    $('#section-menu-desplegable').toggleClass("menu-desplegable");
+}
+/*CERRAR MENU*/
+function cerrarmenu() {
+    $('#section-menu-desplegable').toggleClass("menu-desplegable");
+    $('#img-btn-cerrarmenu').toggleClass("btn-cerrarmenu");
+
+    $('#img-btn-abrirmenu').toggleClass("ocultar");
+    $('#section-menu-desplegable').toggleClass("ocultar");
+    $(this).toggleClass("ocultar");
+    $('#section-menu-desplegable').children('ul').toggleClass("ocultar");
+}
+/*          NAVEGACION DESKTOP Y MOBILE    ||   AJAX - PARTIAL RENDER  */
 function loadHome(event) {
     event.preventDefault();
     fetch('../Aenima_Prueba_Maquetador/home.html').then(
