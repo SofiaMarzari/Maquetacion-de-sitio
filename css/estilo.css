@@ -949,6 +949,49 @@
     margin: 0px 0px 0px 0px;
     margin-left: 2px;
   }
+  /*      HTML BLOG       */
+  #contenedor-blog {
+    width: 700px;
+    height: 100%;
+  }
+  #contenedor-blog > section {
+    bottom: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  #contenedor-blog > section > p {
+    width: 100px;
+    font-family: "Montserrat", sans-serif;
+    color: #2A3037;
+    font-size: 50px;
+    margin-left: 280px;
+    font-weight: bold;
+  }
+  #contenedor-blog > section > section {
+    width: 100%;
+  }
+  #contenedor-blog > section > section > section {
+    width: 600px;
+    height: 600px;
+  }
+  #contenedor-blog > section > section > section > img {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+  }
+  #contenedor-blog > section > section > section > p {
+    font-family: "Acumin Pro", Arial, Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #202124;
+    position: absolute;
+    z-index: 3;
+  }
+  #contenedor-blog > section > section > section > div {
+    position: absolute;
+    z-index: 3;
+  }
   /*          FOOTER          */
   footer {
     background-color: #2A3037;
