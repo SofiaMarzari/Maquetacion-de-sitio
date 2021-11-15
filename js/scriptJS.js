@@ -51,7 +51,7 @@ function loadHome(event) {
 
 function loadTendencias(event) {
     event.preventDefault();
-    fetch('../Aenima_Prueba_Maquetador/tendencias.html').then(
+    fetch('https://sofiamarzari.github.io/Aenima-Prueba-FrontEnd-Maquetador/tendencias.html').then(
         function(response) {
             if (response.ok) {
                 response.text().then(
