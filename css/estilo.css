@@ -2,6 +2,10 @@
   display: none;
 }
 
+#contenedor-ajax {
+  height: 100%;
+}
+
 @media only screen and (min-width: 1350px) {
   /*    NAVEGACION    */
   nav {
@@ -59,9 +63,6 @@
   #section-menu-desplegable {
     display: none;
   }
-  /*.is-hidden {
-        display: none;
-    }*/
   /*          SECTION PRESENTACION        */
   #section-presentacion {
     width: 100%;
@@ -298,8 +299,12 @@
     margin: 10px 0px 0px 33px;
   }
   /*      HTML TENDENCIAS     */
+  #contenedor-tendencias {
+    height: 100%;
+  }
   #contenedor-tendencias > section {
     padding-top: 5px;
+    height: 100%;
   }
   #contenedor-tendencias > section > p {
     margin-left: 400px;
@@ -310,6 +315,7 @@
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
+    height: 100%;
   }
   #contenedor-tendencias > section > section > section {
     margin: 10px;
@@ -335,6 +341,10 @@
   .hidden-nuevocartel {
     visibility: hidden;
     position: absolute;
+    top: 1145px;
+  }
+  /*      HTML HOME           */
+  #contenedor-home > div > section > section > section:first-child > article {
     top: 1145px;
   }
   /*         SECTION BLOG     */
@@ -573,7 +583,7 @@
     width: 350px;
     height: 730px;
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     background-color: rgba(42, 48, 55, 0.5);
   }
   #section-menu-desplegable > ul {
@@ -582,7 +592,7 @@
     height: 730px;
     background-color: #FFFFFF;
     position: absolute;
-    z-index: 3;
+    z-index: 6;
     margin: 0px 0px 0px 148px;
     list-style: none;
     padding-left: 0px;
@@ -787,7 +797,17 @@
     color: #7A838D;
     margin: 10px 0px 0px 33px;
   }
+  /*      HTML HOME           */
+  #contenedor-ajax > div > section > section > section:first-child > article {
+    top: 970px;
+  }
   /*      HTML TENDENCIAS     */
+  #contenedor-tendencias > section {
+    height: 100%;
+  }
+  #contenedor-tendencias > section > section {
+    height: 100%;
+  }
   #contenedor-tendencias > section > p {
     margin-left: 80px;
   }
@@ -948,6 +968,15 @@
     margin-left: 2px;
   }
   /*      HTML BLOG       */
+  #contenedor-blog {
+    height: 100%;
+  }
+  #contenedor-blog > section {
+    height: 100%;
+  }
+  #contenedor-blog > section > section {
+    height: 100%;
+  }
   #contenedor-blog > section > section > section {
     display: block;
   }

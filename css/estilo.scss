@@ -8,6 +8,10 @@ $widthmobile: 350px;
     display: none;
 }
 
+#contenedor-ajax {
+    height: 100%;
+}
+
 @media only screen and (min-width: 1350px) {
     /*    NAVEGACION    */
     nav {
@@ -51,9 +55,6 @@ $widthmobile: 350px;
     #section-menu-desplegable {
         display: none;
     }
-    /*.is-hidden {
-        display: none;
-    }*/
     /*          SECTION PRESENTACION        */
     #section-presentacion {
         width: 100%;
@@ -262,8 +263,12 @@ $widthmobile: 350px;
         margin: 10px 0px 0px 33px;
     }
     /*      HTML TENDENCIAS     */
+    #contenedor-tendencias {
+        height: 100%;
+    }
     #contenedor-tendencias>section {
         padding-top: 5px;
+        height: 100%;
     }
     #contenedor-tendencias>section>p {
         margin-left: 400px;
@@ -272,6 +277,7 @@ $widthmobile: 350px;
     #contenedor-tendencias>section>section {
         display: grid;
         grid-template-columns: auto auto auto;
+        height: 100%;
     }
     #contenedor-tendencias>section>section>section {
         margin: 10px;
@@ -297,6 +303,10 @@ $widthmobile: 350px;
     .hidden-nuevocartel {
         visibility: hidden;
         position: absolute;
+        top: 1145px;
+    }
+    /*      HTML HOME           */
+    #contenedor-home>div>section>section>section:first-child>article {
         top: 1145px;
     }
     /*         SECTION BLOG     */
@@ -488,7 +498,7 @@ $widthmobile: 350px;
         width: $widthmobile;
         height: 730px;
         position: absolute;
-        z-index: 3;
+        z-index: 5;
         background-color: rgba($colortextogrisaseo, 0.5);
     }
     #section-menu-desplegable>ul {
@@ -497,7 +507,7 @@ $widthmobile: 350px;
         height: 730px;
         background-color: $colorprincipal;
         position: absolute;
-        z-index: 3;
+        z-index: 6;
         margin: 0px 0px 0px 148px;
         list-style: none;
         padding-left: 0px;
@@ -690,7 +700,17 @@ $widthmobile: 350px;
         color: #7A838D;
         margin: 10px 0px 0px 33px;
     }
+    /*      HTML HOME           */
+    #contenedor-ajax>div>section>section>section:first-child>article {
+        top: 970px;
+    }
     /*      HTML TENDENCIAS     */
+    #contenedor-tendencias>section {
+        height: 100%;
+    }
+    #contenedor-tendencias>section>section {
+        height: 100%;
+    }
     #contenedor-tendencias>section>p {
         margin-left: 80px;
     }
@@ -837,6 +857,15 @@ $widthmobile: 350px;
         margin-left: 2px;
     }
     /*      HTML BLOG       */
+    #contenedor-blog {
+        height: 100%;
+    }
+    #contenedor-blog>section {
+        height: 100%;
+    }
+    #contenedor-blog>section>section {
+        height: 100%;
+    }
     #contenedor-blog>section>section>section {
         display: block;
     }
