@@ -622,6 +622,10 @@ $widthmobile: 350px;
         height: 600px;
     }
     .section-tendenciaparticular {
+        display: none;
+    }
+    #section-contenedor-tendencias>section:first-child {
+        display: block;
         width: 286px;
         height: 314px;
         box-shadow: 0px 3px 6px #00000029;
@@ -629,12 +633,12 @@ $widthmobile: 350px;
         background-color: $colorprincipal;
         margin-left: 30px;
     }
-    .section-tendenciaparticular>img {
+    #section-contenedor-tendencias>section:first-child>img {
         width: 286px;
         height: 180px;
         border-radius: 6px 6px 0px 0px;
     }
-    .section-tendenciaparticular>h6 {
+    #section-contenedor-tendencias>section:first-child>h6 {
         color: $colortextogrisaseo;
         width: 286px;
         font-family: $fuenteprincipal;
@@ -642,7 +646,7 @@ $widthmobile: 350px;
         font-size: 16px;
         margin: 33px 0px 0px 33px;
     }
-    .section-tendenciaparticular>p {
+    #section-contenedor-tendencias>section:first-child>p {
         width: 230px;
         font-size: 14px;
         font-family: $fuenteprincipal;

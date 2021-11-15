@@ -16,7 +16,6 @@ $('#img-btn-abrirmenu').on('click', function() {
 
     $('#section-menu-desplegable').addClass("menu-desplegable");
 });
-$('#section-menu-desplegable').on('click', cerrarmenu);
 /*CERRAR MENU*/
 $('#img-btn-cerrarmenu').on('click', cerrarmenu);
 
