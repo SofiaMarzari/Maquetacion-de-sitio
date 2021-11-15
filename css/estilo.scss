@@ -693,18 +693,9 @@ $widthmobile: 350px;
         margin: 10px 0px 0px 33px;
     }
     /*      HTML TENDENCIAS     */
-    #contenedor-tendencias>section {
-        padding-top: 5px;
-    }
     #contenedor-tendencias>section>p {
-        margin-left: 400px;
-        font-size: 50px;
+        margin-left: 80px;
     }
-    #contenedor-tendencias>section>section {
-        display: flex;
-        flex-direction: column;
-    }
-    //section tendencias - particular
     #contenedor-tendencias>section>section>section {
         display: block;
         width: 286px;
@@ -713,7 +704,7 @@ $widthmobile: 350px;
         border-radius: 6px;
         background-color: $colorprincipal;
         margin-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     #contenedor-tendencias>section>section>section>img {
         width: 286px;
@@ -726,14 +717,14 @@ $widthmobile: 350px;
         font-family: $fuenteprincipal;
         font-weight: bold;
         font-size: 16px;
-        margin: 10px 0px 0px 33px;
+        margin: 33px 0px 0px 33px;
     }
     #contenedor-tendencias>section>section>section>p {
         width: 230px;
         font-size: 14px;
         font-family: $fuenteprincipal;
         color: #7A838D;
-        margin: 10px 0px 15px 33px;
+        margin: 10px 0px 0px 33px;
     }
     /*CARTEL "NUEVO" */
     .is-article-nuevocartel {
